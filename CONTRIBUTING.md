@@ -142,9 +142,14 @@ detected as a `CMake` file, not a `Text` file.
 # Tests
 A test file is required with language additions. The file should
 contain every variant comments and quotes, as well as a comment
-at the top of the file containing the manually verified lines,
-code, comments, blanks e.g.
-`// 39 lines 32 code 2 comments 5 blanks`. The comment should use
+at the top of the file containing the manually verified analysis data in the format:
+
+`X lines X code X comments X blanks`
+
+e.g.
+`// 39 lines 32 code 2 comments 5 blanks`. 
+
+The comment should use
 the syntax of the language you're testing. A good example of a
 test file is [`tests/data/rust.rs`].
 
